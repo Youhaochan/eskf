@@ -1,0 +1,16 @@
+<launch>
+   <include file="$(find xtark_driver)/launch/xtark_driver.launch" />
+   <include file="$(find fdilink_ahrs)/launch/ahrs_driver.launch" />
+    <include file="$(find sdkeli_ls_udp)/launch/sdkeli_ls1207de_udp_with_1_lidar.launch" />
+    <arg name="config_file_add" default = "/home/xtark/ros_ws" />
+    <param name="use_sim_time" value="false"/>
+    <node name="eskf" pkg="eskf" type="eskf" output="screen" respawn="true">
+    <param name="working_space" type="string" value="$(arg config_file_add)" />
+
+        
+    </node>
+    <!-- <node pkg="tf" type="static_transform_publisher" name="base_footprint_to_imu" args="-0.05 0 0.05 -1.57 0 0 base_footprint base_imu_link 100"/> -->
+    
+</launch>
+
+

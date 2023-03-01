@@ -1,0 +1,26 @@
+# sensor noise parameter
+acc_white_noise: 5
+gyro_white_noise: 0.004
+acc_bias_instability: 1
+gyro_bias_instability: 0.001
+acc_x_bias: -0.0014
+acc_y_bias: -0.0007
+acc_z_bias: 0.0026
+gyro_x_bias: -0.0002
+gyro_y_bias: -0.0026
+gyro_z_bias: -0.0009
+imu_qw: 0.01
+imu_qx: 0.01
+imu_qy: 0.01
+imu_qz: 0.01
+encoder_x: 0.01
+encoder_y: 0.01
+encoder_z: 0.01
+encoder_vx: 0.01
+encoder_vy: 0.01
+encoder_vz: 0.01
+encoder_qw: 0.01
+encoder_qz: 0.01
+
+# if use the imu quaternion to update the pose of robot
+use_imu_quaternion: true
